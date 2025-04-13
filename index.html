@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador Atron</title>
+  <!-- Fontes e Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-/+9KmjqzBF3Fqz6HKvb4ZTlfT9zPtdC2iTNYQYKyRx5cA0mk64rKZZxTVJKC/6OaKZcM4+vjsdk9N9yUwSm29A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Gerenciador Atron</h1>
+      <p>O sistema completo para gestão eficiente da sua empresa</p>
+      <div class="cta">
+        <a href="#features">Explorar Funcionalidades</a>
+        <a href="#planos">Planos e Preços</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Funcionalidades -->
+    <section class="features" id="features">
+      <h2>Funcionalidades Poderosas</h2>
+      <div class="feature-list">
+        <div class="feature">
+          <h3>Gestão de Usuários</h3>
+          <p>Adicione, edite e controle permissões com facilidade.</p>
+        </div>
+        <div class="feature">
+          <h3>Departamentos</h3>
+          <p>Organize setores e otimize a comunicação interna.</p>
+        </div>
+        <div class="feature">
+          <h3>Cargos</h3>
+          <p>Defina hierarquias e responsabilidades com clareza.</p>
+        </div>
+        <div class="feature">
+          <h3>Gestão de Tarefas</h3>
+          <p>Acompanhe atividades, deadlines e produtividade.</p>
+        </div>
+        <div class="feature">
+          <h3>Permissões Avançadas</h3>
+          <p>Controle detalhado de acessos para garantir a segurança.</p>
+        </div>
+        <div class="feature">
+          <h3>Dashboards Visuais</h3>
+          <p>Visualize dados em tempo real com gráficos intuitivos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+      <h2>O que dizem sobre o Atron</h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p>O Gerenciador Atron revolucionou a forma como organizamos nossas equipes. Tudo ficou mais claro e ágil!</p>
+          <span>— Fernanda Oliveira, RH Corporativo</span>
+        </div>
+        <div class="testimonial">
+          <p>Simples de usar, poderoso e confiável. Hoje não conseguimos imaginar o dia a dia sem o Atron.</p>
+          <span>— Rodrigo Souza, Gerente de Projetos</span>
+        </div>
+        <div class="testimonial">
+          <p>Com o Atron, nossa produtividade disparou! As manutenções e atualizações constantes fazem toda a diferença.
+          </p>
+          <span>— Maria Gomes, Coordenadora de TI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos e Preços -->
+    <section class="planos" id="planos">
+      <div class="container">
+        <h2>Planos e Preços</h2>
+        <p>Escolha o plano que melhor se adapta às necessidades da sua empresa. Cada plano oferece suporte dedicado,
+          manutenções regulares e atualizações periódicas.</p>
+        <div class="planos-container">
+          <!-- Plano Básico (Bronze) -->
+          <div class="plano bronze">
+            <h3>Basic</h3>
+            <p class="preco">R$ 49,90/mês</p>
+            <ul>
+              <li>Suporte via e-mail</li>
+              <li>Atualizações mensais</li>
+              <li>Manutenção semestral</li>
+            </ul>
+            <button class="btn-assinar">Assinar</button>
+          </div>
+          <!-- Plano Premium (Prata) -->
+          <div class="plano silver">
+            <h3>Premium</h3>
+            <p class="preco">R$ 149,90/mês</p>
+            <ul>
+              <li>Suporte via chat e e-mail</li>
+              <li>Atualizações quinzenais</li>
+              <li>Manutenção trimestral</li>
+              <li>Relatórios mensais</li>
+            </ul>
+            <button class="btn-assinar">Assinar</button>
+          </div>
+          <!-- Plano Enterprise (Ouro/Black) -->
+          <div class="plano gold">
+            <h3>Enterprise</h3>
+            <p class="preco">R$ 499,90/mês</p>
+            <ul>
+              <li>Suporte 24/7</li>
+              <li>Atualizações semanais</li>
+              <li>Manutenção mensal</li>
+              <li>Relatórios personalizados</li>
+              <li>Consultoria exclusiva</li>
+            </ul>
+            <button class="btn-assinar">Assinar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gerenciador Atron. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+    </div>
+  </footer>
+
+  <!-- Script: Rolagem Suave para os links da CTA -->
+  <script>
+    document.querySelectorAll('.cta a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = this.getAttribute('href');
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+/* Reset e Tipografia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* Background Dark & Layout Geral */
+body {
+  background: linear-gradient(to bottom, #1f2937, #111827);
+  color: #e5e7eb;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Animações Suaves */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  color: #e5e7eb;
+  padding: 4rem 1rem 6rem;
+  text-align: center;
+  position: relative;
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
+}
+header p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  animation: fadeInUp 1s ease-out;
+}
+.cta {
+  margin-top: 2rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+.cta a {
+  background-color: #e5e7eb;
+  color: #1e3a8a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 0 0.5rem;
+}
+.cta a:hover {
+  background-color: #cbd5e1;
+}
+
+/* Funcionalidades */
+section.features {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+.features h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+}
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.feature {
+  background: #1f2937;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+.feature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #fbbf24;
+}
+.feature p {
+  color: #d1d5db;
+}
+
+/* Depoimentos */
+section.testimonials {
+  background: #111827;
+  padding: 4rem 1.5rem;
+  border-radius: 24px;
+  margin: 4rem auto;
+  max-width: 1100px;
+}
+.testimonials h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+}
+.testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.testimonial {
+  background: #1f2937;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.testimonial::before {
+  content: "“";
+  font-size: 3rem;
+  color: #60a5fa;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+.testimonial span {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* Planos e Preços */
+section.planos {
+  background: #1f2937;
+  padding: 3rem 1.5rem;
+  margin: 4rem auto;
+}
+section.planos h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+}
+section.planos p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #9ca3af;
+}
+.planos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.plano {
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.plano:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+/* Plano Básico (Bronze) */
+.plano.bronze {
+  background-color: #2c1d13; /* fundo bronze escuro */
+  border: 2px solid #8d5524;
+}
+.plano.bronze h3 {
+  color: #d29b6e;
+}
+/* Plano Premium (Prata) */
+.plano.silver {
+  background-color: #1c1c1e; /* fundo prata escuro */
+  border: 2px solid #78787c;
+}
+.plano.silver h3 {
+  color: #a1a1aa;
+}
+/* Plano Enterprise (Ouro/Black) */
+.plano.gold {
+  background-color: #0d0d0d; /* fundo quase preto com toque dourado */
+  border: 2px solid #ffd700;
+}
+.plano.gold h3 {
+  color: #ffd700;
+}
+.preco {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e5e7eb;
+  margin: 1rem 0;
+}
+.plano ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #d1d5db;
+}
+.plano ul li {
+  margin: 0.5rem 0;
+}
+.btn-assinar {
+  background: #fbbf24;
+  color: #1f2937;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.btn-assinar:hover {
+  background: #f59e0b;
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+footer a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
