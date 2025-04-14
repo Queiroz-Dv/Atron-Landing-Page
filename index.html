@@ -4,144 +4,654 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerenciador Atron</title>
-  <!-- Fontes e Ícones -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-/+9KmjqzBF3Fqz6HKvb4ZTlfT9zPtdC2iTNYQYKyRx5cA0mk64rKZZxTVJKC/6OaKZcM4+vjsdk9N9yUwSm29A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <title>Gerenciador Atron - Sistema completo para gestão eficiente</title>
+  <meta name="description"
+    content="O sistema completo para gestão eficiente da sua empresa. Simplifique processos e aumente a produtividade.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div class="container">
-      <h1>Gerenciador Atron</h1>
-      <p>O sistema completo para gestão eficiente da sua empresa</p>
-      <div class="cta">
-        <a href="#features">Funcionalidades</a>
-        <a href="#planos">Planos</a>
+<body class="dark-theme">
+  <div class="page-wrapper">
+    <!-- Header/Navbar -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <span>A</span>
+          </div>
+          <span class="logo-text">Gerenciador Atron</span>
+        </div>
+        <nav class="main-nav">
+          <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+          <a href="#depoimentos" class="nav-link">Depoimentos</a>
+          <a href="#planos" class="nav-link">Planos</a>
+        </nav>
+        <div class="header-actions">
+          <a href="#contato" class="contact-link">Contato</a>
+          <button class="btn btn-primary">Começar Agora</button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- Funcionalidades -->
-    <section class="features" id="features">
-      <h2>Funcionalidades Poderosas</h2>
-      <div class="feature-list">
-        <div class="feature">
-          <h3>Gestão de Usuários</h3>
-          <p>Adicione, edite e controle permissões com facilidade.</p>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="badge"><a href="/v2/atron-v2-page.html">Versão 2.0 Disponível</a></div>
+            <h1 class="hero-title">Gerenciador Atron</h1>
+            <p class="hero-description">
+              O sistema completo para gestão eficiente da sua empresa. Simplifique processos e aumente a produtividade.
+            </p>
+            <div class="hero-buttons">
+              <a href="#funcionalidades" class="btn btn-secondary">Funcionalidades</a>
+              <a href="#planos" class="btn btn-outline">Planos</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="https://placehold.co/800x600/2a2a2a/CCCCCC" alt="Dashboard Atron">
+            </div>
+            <div class="blur-circle blur-circle-1"></div>
+            <div class="blur-circle blur-circle-2"></div>
+          </div>
         </div>
-        <div class="feature">
-          <h3>Departamentos</h3>
-          <p>Organize setores e otimize a comunicação interna.</p>
-        </div>
-        <div class="feature">
-          <h3>Cargos</h3>
-          <p>Defina hierarquias e responsabilidades com clareza.</p>
-        </div>
-        <div class="feature">
-          <h3>Gestão de Tarefas</h3>
-          <p>Acompanhe atividades, deadlines e produtividade.</p>
-        </div>
-        <div class="feature">
-          <h3>Permissões Avançadas</h3>
-          <p>Controle detalhado de acessos para garantir a segurança.</p>
-        </div>
-        <div class="feature">
-          <h3>Dashboards Visuais</h3>
-          <p>Visualize dados em tempo real com gráficos intuitivos.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Depoimentos -->
-    <section class="testimonials">
-      <h2>O que dizem sobre o Atron</h2>
-      <div class="testimonial-list">
-        <div class="testimonial">
-          <p>O Gerenciador Atron revolucionou a forma como organizamos nossas equipes. Tudo ficou mais claro e ágil!</p>
-          <span>— Fernanda Oliveira, RH Corporativo</span>
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <p class="stat-number">+5000</p>
+              <p class="stat-label">Empresas</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">+25000</p>
+              <p class="stat-label">Usuários</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">99.9%</p>
+              <p class="stat-label">Uptime</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">24/7</p>
+              <p class="stat-label">Suporte</p>
+            </div>
+          </div>
         </div>
-        <div class="testimonial">
-          <p>Simples de usar, poderoso e confiável. Hoje não conseguimos imaginar o dia a dia sem o Atron.</p>
-          <span>— Rodrigo Souza, Gerente de Projetos</span>
-        </div>
-        <div class="testimonial">
-          <p>Com o Atron, nossa produtividade disparou! As manutenções e atualizações constantes fazem toda a diferença.
-          </p>
-          <span>— Maria Gomes, Coordenadora de TI</span>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Planos e Preços -->
-    <section class="planos" id="planos">
+      <!-- Features Section -->
+      <section id="funcionalidades" class="features">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Recursos</div>
+            <h2 class="section-title">Funcionalidades Poderosas</h2>
+            <p class="section-description">
+              Ferramentas completas para otimizar a gestão da sua empresa e aumentar a produtividade da sua equipe.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="card feature-card">
+              <div class="card-header">
+                <div class="feature-icon primary-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title primary-text">Gestão de Usuários</h3>
+              </div>
+              <div class="card-content">
+                <p>Adicione, edite e controle permissões com facilidade. Gerencie o acesso de cada membro da equipe.</p>
+              </div>
+            </div>
+
+            <div class="card feature-card">
+              <div class="card-header">
+                <div class="feature-icon accent-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 class="card-title accent-text">Departamentos</h3>
+              </div>
+              <div class="card-content">
+                <p>Organize setores e otimize a comunicação interna. Estruture sua empresa de forma eficiente.</p>
+              </div>
+            </div>
+
+            <div class="card feature-card">
+              <div class="card-header">
+                <div class="feature-icon primary-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title primary-text">Cargos</h3>
+              </div>
+              <div class="card-content">
+                <p>Defina hierarquias e responsabilidades com clareza. Estabeleça funções e níveis de acesso.</p>
+              </div>
+            </div>
+
+            <div class="card feature-card">
+              <div class="card-header">
+                <div class="feature-icon accent-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h3 class="card-title accent-text">Gestão de Tarefas</h3>
+              </div>
+              <div class="card-content">
+                <p>Acompanhe atividades, deadlines e produtividade. Mantenha projetos organizados e dentro do prazo.</p>
+              </div>
+            </div>
+
+            <div class="card feature-card">
+              <div class="card-header">
+                <div class="feature-icon primary-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title primary-text">Permissões Avançadas</h3>
+              </div>
+              <div class="card-content">
+                <p>Controle detalhado de acessos para garantir a segurança. Proteja dados sensíveis da sua empresa.</p>
+              </div>
+            </div>
+
+            <div class="card feature-card">
+              <div class="card-header">
+                <div class="feature-icon accent-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                    <path d="M3 9h18"></path>
+                    <path d="M9 21V9"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title accent-text">Dashboards Visuais</h3>
+              </div>
+              <div class="card-content">
+                <p>Visualize dados em tempo real com gráficos intuitivos. Tome decisões baseadas em informações
+                  precisas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="depoimentos" class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Depoimentos</div>
+            <h2 class="section-title">O que dizem sobre o Atron</h2>
+            <p class="section-description">
+              Conheça a experiência de quem já utiliza nossa plataforma e transformou a gestão da sua empresa.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="card testimonial-card">
+              <div class="stars">
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <blockquote class="testimonial-quote">
+                "O Gerenciador Atron revolucionou a forma como organizamos nossas equipes. Tudo ficou muito mais claro e
+                ágil."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <span>FO</span>
+                </div>
+                <div class="author-info">
+                  <p class="author-name">Fernanda Oliveira</p>
+                  <p class="author-role">RH Corporativo</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card testimonial-card">
+              <div class="stars">
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <blockquote class="testimonial-quote">
+                "Simples de usar, poderoso e confiável. Hoje não conseguimos imaginar o dia a dia sem o Atron."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <span>RS</span>
+                </div>
+                <div class="author-info">
+                  <p class="author-name">Rodrigo Souza</p>
+                  <p class="author-role">Gerente de Projetos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card testimonial-card">
+              <div class="stars">
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="currentColor" stroke="currentColor">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <blockquote class="testimonial-quote">
+                "Com o Atron, nossa produtividade aumentou e nossas reuniões e atualizações constantes fazem toda a
+                diferença."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <span>MG</span>
+                </div>
+                <div class="author-info">
+                  <p class="author-name">Maria Gomes</p>
+                  <p class="author-role">Coordenadora de TI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="planos" class="pricing">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Preços</div>
+            <h2 class="section-title">Planos e Preços</h2>
+            <p class="section-description">
+              Escolha o plano que melhor se adapta às necessidades da sua empresa. Cada plano oferece suporte dedicado,
+              manutenções regulares e atualizações periódicas.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <div class="card pricing-card basic-card">
+              <div class="pricing-highlight"></div>
+              <div class="card-header pricing-header">
+                <h3 class="pricing-title">Basic</h3>
+                <div class="pricing-price">
+                  <span class="currency">R$</span>
+                  <span class="amount">49</span>
+                  <span class="decimals">,90</span>
+                  <span class="period">/mês</span>
+                </div>
+                <p class="pricing-description">Ideal para pequenas equipes</p>
+              </div>
+              <div class="card-content pricing-content">
+                <ul class="pricing-features">
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Suporte via e-mail</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Atualizações mensais</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Manutenção semestral</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Até 5 usuários</span>
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary">Assinar</button>
+              </div>
+            </div>
+
+            <div class="card pricing-card premium-card">
+              <div class="pricing-highlight"></div>
+              <div class="pricing-badge">Popular</div>
+              <div class="card-header pricing-header">
+                <h3 class="pricing-title">Premium</h3>
+                <div class="pricing-price">
+                  <span class="currency">R$</span>
+                  <span class="amount">149</span>
+                  <span class="decimals">,90</span>
+                  <span class="period">/mês</span>
+                </div>
+                <p class="pricing-description">Recomendado para a maioria das empresas</p>
+              </div>
+              <div class="card-content pricing-content">
+                <div class="pricing-promo">
+                  <p>Economize 20% no plano anual</p>
+                </div>
+                <ul class="pricing-features">
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Suporte via chat e e-mail</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Atualizações quinzenais</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Manutenção trimestral</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Relatórios mensais</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Até 20 usuários</span>
+                  </li>
+                </ul>
+                <button class="btn btn-primary">Assinar Agora</button>
+              </div>
+            </div>
+
+            <div class="card pricing-card enterprise-card">
+              <div class="pricing-highlight accent-highlight"></div>
+              <div class="card-header pricing-header">
+                <h3 class="pricing-title">Enterprise</h3>
+                <div class="pricing-price">
+                  <span class="currency">R$</span>
+                  <span class="amount">499</span>
+                  <span class="decimals">,90</span>
+                  <span class="period">/mês</span>
+                </div>
+                <p class="pricing-description">Para grandes organizações</p>
+              </div>
+              <div class="card-content pricing-content">
+                <ul class="pricing-features">
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="  width=" 20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Suporte 24/7</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Atualizações semanais</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Manutenção mensal</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Relatórios personalizados</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Consultoria exclusiva</span>
+                  </li>
+                  <li class="pricing-feature">
+                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Usuários ilimitados</span>
+                  </li>
+                </ul>
+                <button class="btn btn-accent">Falar com Vendas</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="cta-title">Pronto para transformar sua gestão?</h2>
+            <p class="cta-description">
+              Comece hoje mesmo e descubra como o Gerenciador Atron pode otimizar os processos da sua empresa.
+            </p>
+          </div>
+          <div class="cta-buttons">
+            <button class="btn btn-secondary btn-lg">Agendar Demo</button>
+            <button class="btn btn-outline-light btn-lg">Falar com Consultor</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
-        <h2>Planos e Preços</h2>
-        <p>Escolha o plano que melhor se adapta às necessidades da sua empresa. Cada plano oferece suporte dedicado,
-          manutenções regulares e atualizações periódicas.</p>
-        <div class="planos-container">
-          <!-- Plano Básico (Bronze) -->
-          <div class="plano bronze">
-            <h3>Basic</h3>
-            <p class="preco">R$ 49,90/mês</p>
-            <ul>
-              <li>Suporte via e-mail</li>
-              <li>Atualizações mensais</li>
-              <li>Manutenção semestral</li>
-            </ul>
-            <button class="btn-assinar">Assinar</button>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo-icon">
+                <span>A</span>
+              </div>
+              <span class="logo-text">Gerenciador Atron</span>
+            </div>
+            <p class="footer-description">O sistema completo para gestão eficiente da sua empresa.</p>
           </div>
-          <!-- Plano Premium (Prata) -->
-          <div class="plano silver">
-            <h3>Premium</h3>
-            <p class="preco">R$ 149,90/mês</p>
+          <div class="footer-links">
+            <h3 class="footer-title">Produto</h3>
             <ul>
-              <li>Suporte via chat e e-mail</li>
-              <li>Atualizações quinzenais</li>
-              <li>Manutenção trimestral</li>
-              <li>Relatórios mensais</li>
+              <li><a href="#" class="footer-link">Funcionalidades</a></li>
+              <li><a href="#" class="footer-link">Planos</a></li>
+              <li><a href="#" class="footer-link">Preços</a></li>
+              <li><a href="#" class="footer-link">Atualizações</a></li>
             </ul>
-            <button class="btn-assinar">Assinar</button>
           </div>
-          <!-- Plano Enterprise (Ouro/Black) -->
-          <div class="plano gold">
-            <h3>Enterprise</h3>
-            <p class="preco">R$ 499,90/mês</p>
+          <div class="footer-links">
+            <h3 class="footer-title">Empresa</h3>
             <ul>
-              <li>Suporte 24/7</li>
-              <li>Atualizações semanais</li>
-              <li>Manutenção mensal</li>
-              <li>Relatórios personalizados</li>
-              <li>Consultoria exclusiva</li>
+              <li><a href="#" class="footer-link">Sobre nós</a></li>
+              <li><a href="#" class="footer-link">Carreiras</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Contato</a></li>
             </ul>
-            <button class="btn-assinar">Assinar</button>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Suporte</h3>
+            <ul>
+              <li><a href="#" class="footer-link">Central de Ajuda</a></li>
+              <li><a href="#" class="footer-link">Documentação</a></li>
+              <li><a href="#" class="footer-link">Status do Sistema</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2025 Gerenciador Atron. Todos os direitos reservados.</p>
+          <div class="legal-links">
+            <a href="#" class="legal-link">Política de Privacidade</a>
+            <a href="#" class="legal-link">Termos de Uso</a>
+            <a href="#" class="legal-link">Cookies</a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
+  </div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Gerenciador Atron. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
-    </div>
-  </footer>
-
-  <!-- Script: Rolagem Suave para os links da CTA -->
-  <script>
-    document.querySelectorAll('.cta a').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = this.getAttribute('href');
-        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
